@@ -6,7 +6,7 @@ on:
 
 env:
   # Also change CACHE_VERSION in the other workflows
-  CACHE_VERSION: 20
+  CACHE_VERSION: 23
   DEFAULT_PYTHON: "3.10"
 
 jobs:
@@ -35,7 +35,7 @@ jobs:
           }}"
       - name: Restore Python virtual environment
         id: cache-venv
-        uses: actions/cache@v3.0.7
+        uses: actions/cache@v3.0.8
         with:
           path: venv
           key: >-
